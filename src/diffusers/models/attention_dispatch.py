@@ -1547,7 +1547,7 @@ def _native_attention(
         dropout_p=dropout_p,
         is_causal=is_causal,
         scale=scale,
-        enable_gqa=enable_gqa,
+        #enable_gqa=enable_gqa,
     )
     out = out.permute(0, 2, 1, 3)
     return out
